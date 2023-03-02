@@ -807,12 +807,13 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    width: 100%;
     padding: 100px 0;
     background-color: var(--navyblue);
 }
 
 .footer-text{
-    margin: 0;
+    margin: auto;
     display: block;
 }
 
@@ -891,6 +892,7 @@ p.end_text{
 
 .email-stuff{
     margin-left: auto;
+    margin-right: auto;
 }
 
 .sub-stuff{
