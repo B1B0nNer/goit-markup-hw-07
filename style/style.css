@@ -196,6 +196,10 @@ ul{
     margin-right: 40px;
 }
 
+.navigation-drop-button{
+    display: none;
+}
+
 .hero{
     max-width: 1440px;
     margin-left: auto;
@@ -1156,6 +1160,22 @@ p.end_text{
         color: var(--navyblue);
     }
 
+    .navigation-drop-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border: none;
+        width: 32px;
+        height: 22px;
+    }
+
+    .nav-drop-but-icon{
+        fill: var(--navyblue);
+        width: 32px;
+        height: 22px;
+    }
+
     .credo{
     
         width: 100%;
@@ -1172,16 +1192,11 @@ p.end_text{
         color: #fff;
     }
 
-    .hero{
-        background-size:cover;
-    }
-
     .skills{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        margin: 96px 0;
     }
 
     .skills-icon, .skills-icon-house{
@@ -1330,6 +1345,10 @@ p.end_text{
     .email-for-sub{
         width: calc(100vw - 32px);
         margin-bottom: 16px;
+    }
+
+    .backdrop{
+        padding: 0 16px;
     }
 
 }
