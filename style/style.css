@@ -1134,6 +1134,10 @@ p.end_text{
         margin: 0;
     }
 
+    .container{
+        padding: calc(calc(100vw - 260px) / 4);
+    }
+
     .title_info, .contacts{
         opacity: 0;
         display: none;
@@ -1160,20 +1164,139 @@ p.end_text{
         color: var(--navyblue);
     }
 
+    .mobile-nav-window{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .close-mobile-window-btn{
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        background-color: var(--cornflower);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .close-mobile-btn{
+        width: 8px;
+        height: 8px;
+        fill: #000;
+    }
+
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0 284px 40px;
+    }
+
+    .contacts-mob{
+        color: var(--ocean);
+    }
+
+    .no-contacts-mob{
+        color: var(--navyblue);
+    }
+
+    .mobile-nav li a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+
+        letter-spacing: 0.02em;
+    }
+
+    .mobile-nav li:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    .mobile-address{
+        display: flex;
+        flex-direction: column;
+        max-width: calc(100vw - 50px);
+        padding-left: calc(calc(100vw - 353px)/2);
+        margin-bottom: 40px;
+        gap: 40px;
+    }
+
+    .mob-phone a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+
+        letter-spacing: 0.02em;
+
+        color: var(--iris);
+    }
+
+    .mob-email a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+
+        letter-spacing: 0.02em;
+
+        color: var(--slate);
+    }
+
+    .social-media-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        margin-left: calc(calc(100vw - 328px) / 2);
+    }
+
+    .social-media-mobile li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: var(--iris);
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+
+    .social-media-mobile-li:not(:last-child){
+        margin-right: 56px;
+    }
+
+    .soc-med-mob{
+        width: 24px;
+        height: 24px;
+        fill: var(--cloud);
+    }
+
     .navigation-drop-button{
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
         border: none;
-        width: 32px;
-        height: 22px;
+        background-color: #fff;
     }
 
     .nav-drop-but-icon{
         fill: var(--navyblue);
-        width: 32px;
-        height: 22px;
+        max-width: 32px;
+        max-height: 32px;
     }
 
     .credo{
@@ -1276,6 +1399,42 @@ p.end_text{
         display: block;
         width: calc(50vw - 48px);
     }
+
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .filters li:not(:nth-child(4)), .filters li:not(:last-child){
+        margin-right: 24px;
+    }
+
+    .filters li:nth-child(-n+3){
+        margin-bottom: 16px;
+    }
+
+    .filters li:not(:first-child){
+        margin-left: 0;
+    }
+
+    .filters button{
+        padding: 8px 16px;
+    }
+
+    .products li{
+        margin-bottom: 48px;
+        margin-right: 0px;
+    }
+
+    .products li:nth-last-child(-n+3):not(:last-child){
+        margin-bottom: 48px;
+    }
+
+    .card-img, .products_item{
+        max-width: calc(100vw - 15%);
+    }
     
     .footer-container{
         display: flex;
@@ -1350,7 +1509,6 @@ p.end_text{
     .backdrop{
         padding: 0 16px;
     }
-
 }
 
 
