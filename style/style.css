@@ -594,12 +594,12 @@ ul{
     justify-content: center;
 }
 
-.skills li{
+.skills-li{
     margin-right: 24px;
     width: 264px;
 }
 
-.skills li:last-child{
+.skills-li:last-child{
     margin-right: 0;
 }
 
@@ -1134,13 +1134,26 @@ p.end_text{
         margin: 0;
     }
 
+    .container{
+        max-width: 428px;
+    }
+
+    .header-container{
+        padding: 24px 16px;
+    }
+
     .title_info, .contacts{
         opacity: 0;
         display: none;
     }
 
     .backdrop{
-        position: absolute;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .modal-window{
+        min-height: 90vh;
     }
 
     .WebLogo, .StudioLogo{
@@ -1191,8 +1204,11 @@ p.end_text{
     }
 
     .mob-win{
+        display: flex;
+        flex-direction: column;
         height: 100vh;
-        padding: 40px 0 40px 40px;
+        padding: 40px 16px 40px 40px;
+        overflow-y: auto;
     }
 
     .mobile-nav{
@@ -1263,6 +1279,7 @@ p.end_text{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        max-width: 328px;
     }
 
     .social-media-mobile li a{
@@ -1313,7 +1330,9 @@ p.end_text{
     }
 
     .credo{
-    
+        
+        margin: 0 auto;
+
         max-width: 428px;
 
         font-family: 'Roboto';
@@ -1362,11 +1381,11 @@ p.end_text{
         color: var(--navyblue);
     }
 
-    .skills li:not(:last-child){
+    .skills-li:not(:last-child){
         margin-bottom: 72px;
     }
 
-    .skills li{
+    .skills-li{
         width: 80vw;
         margin: 0;
     }
@@ -1482,6 +1501,7 @@ p.end_text{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     .footer-text{
@@ -1541,8 +1561,12 @@ p.end_text{
         margin-top: 16px;
     }
 
+    .sub-button{
+        margin-left: 0;
+    }
+
     .email-for-sub{
-        width: calc(100vw - 32px);
+        width: 70vw;
         margin-bottom: 16px;
     }
 
@@ -1558,6 +1582,15 @@ p.end_text{
     .container{
         max-width: 100vw;
         padding: 0 15px;
+    }
+
+    .mobile-nav-window{
+        display: none;
+    }
+
+    .header-container{
+        max-width: 768px;
+        display: flex;
     }
 
     .contacts{
@@ -1594,33 +1627,36 @@ p.end_text{
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 768px;
     }
 
     .skills{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        max-width: 736px;
+        gap: 72px 24px;
     }
 
-    .skills li{
+    .skills-li{
         display: block;
         margin-right: 0;
+        width: calc((100% - 24px) / 2)
     }
 
-    .skills li:nth-child(1), .skills li:nth-child(3){
-        margin-right: 12px;
+    .skills-li h3{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+
+        letter-spacing: 0.02em;
+
+        color: var(--navyblue);
     }
 
     .skills-icon-house{
         display: none;
-    }
-
-    .skills li:not(:nth-child(n+3)){
-        margin-bottom: 72px;
     }
 
     .what_are_we_doing{
@@ -1628,7 +1664,7 @@ p.end_text{
     }
 
     .team-container{
-        max-width: 768px;
+        max-width: 582px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1638,21 +1674,14 @@ p.end_text{
     .team_pics{
         display: flex;
         flex-wrap: wrap;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
         margin-left: auto;
+        gap: 64px 24px;
     }
 
     .team-pictures{
         margin-right: 0;
-    }
-
-    .team-pictures:not(:nth-child(2n)){
-        margin-right: 24px;
-    }
-
-    .team-pictures:not(:nth-child(n+3)){
-        margin-bottom: 64px;
     }
 
     .customers-section{
@@ -1660,7 +1689,14 @@ p.end_text{
         padding: 96px 0;
     }
 
+    .customers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .customer-icon-house{
+        max-width: 582px;
         list-style: none;
         display: flex;
         flex-wrap: wrap;
@@ -1683,8 +1719,8 @@ p.end_text{
     }
 
     .footer-container{
-        width: 100vw;
-        padding: 96px;
+        max-width: 582px;
+        padding: 96px 0;
         display: flex;
         flex-wrap: wrap;
     }
