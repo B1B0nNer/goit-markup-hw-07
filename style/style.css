@@ -287,7 +287,7 @@ ul{
 .modal-window{
     padding: 72px 24px 24px;
     width: 408px;
-    min-height: 576px;
+    height: 586px;
     border-radius: 4px;
     opacity: 1;
     background-color: #fff;
@@ -1164,7 +1164,8 @@ p.end_text{
     }
 
     .modal-window{
-        height: 100%;
+        margin: auto 0;
+        height: 586px;
     }
 
     .WebLogo, .StudioLogo{
@@ -1647,6 +1648,11 @@ p.end_text{
     .backdrop{
         align-items: flex-start;
         overflow-y: auto;
+    }
+
+    .modal-window{
+        margin: auto 0;
+        height: 586px;
     }
 
     .email{
